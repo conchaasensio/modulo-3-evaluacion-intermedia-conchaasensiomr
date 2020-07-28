@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: lightcyan;
 }
 
 .App {
@@ -17,7 +17,7 @@ h1 {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  max-width: 70%;
+  max-width: 80%;
   margin: auto;
 }
 

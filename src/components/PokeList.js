@@ -8,11 +8,7 @@ const PokeList = (props) => {
         <Pokemon
           name={pokemon.name}
           image={pokemon.url}
-          types={pokemon.types.map((pokemon, id) => (
-            <span className="pokemonType" key={id}>
-              {pokemon}
-            </span>
-          ))}
+          types={pokemon.types}
         />
       </li>
     );
