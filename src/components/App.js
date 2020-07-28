@@ -1,10 +1,17 @@
-import React /*, { useState }*/ from 'react';
-// import '../stylesheets/App.css'; Para importar el CSS.
+import React, { useState } from 'react';
+import '../stylesheets/App.css';
+import PokeList from './PokeList';
+import pokemonsFromApi from '../data/pokemons.json';
 
 const App = () => {
-  // const [dato, funcionDato] = useState(); Para definir el estado inicial
+  const [pokemons, setPokemons] = useState(pokemonsFromApi);
 
-  return <div className="App">Hola, mundo.</div>;
+  return (
+    <div className="App">
+      <h1>Mi lista de Pokemon</h1>
+      <PokeList pokemons={pokemons} />
+    </div>
+  );
 };
 
 export default App;
