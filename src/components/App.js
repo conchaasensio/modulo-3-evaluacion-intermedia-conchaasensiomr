@@ -4,7 +4,7 @@ import PokeList from './PokeList';
 import pokemonsFromApi from '../data/pokemons.json';
 
 const App = () => {
-  const [pokemons, setPokemons] = useState(pokemonsFromApi);
+  const [pokemons] = useState(pokemonsFromApi);
 
   return (
     <div className="App">

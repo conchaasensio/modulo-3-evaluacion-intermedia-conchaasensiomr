@@ -1,9 +1,8 @@
 import React from 'react';
 
 const Pokemon = (props) => {
-  console.log(props);
-  const pokemonsType = props.types.map((type, id) => {
-    return <li key={id}>{type}</li>;
+  const pokemonsType = props.types.map((type, index) => {
+    return <li key={index}>{type}</li>;
   });
   return (
     <div className="pokemonCard">
